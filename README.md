@@ -16,9 +16,9 @@ $$\Delta p = \frac{1}{2} \rho u^2 C_d$$
 
 
 Where
-- $\Delta p$  is the pressure drop [$Pa$]
-- $\rho$  is the fluid density [$kg/m^3$]
-- $u$ is the nominal fluid velocity thru the orifice [$m/s$]
+- $\Delta p$  is the pressure drop [ $Pa$ ]
+- $\rho$  is the fluid density [ $kg/m^3$ ]
+- $u$ is the nominal fluid velocity thru the orifice [ $m/s$ ]
 - $C_d$ is the resistance coefficient = 2.7
 
 
@@ -27,37 +27,37 @@ The fluid velocity thru the orifice is found from
 $$u = Q/A_o$$
 
 Where
-- $Q$ is the flow rate [$m^3/s$] 
-- $A_o$ is the orifice area [$m^2$] 
+- $Q$ is the flow rate [ $m^3/s$ ] 
+- $A_o$ is the orifice area [ $m^2$ ] 
 
 The flow rate is known from the actuator
 
 $$Q = A \dot{x}$$
 
 Where
-- $A$ is the area of the actuator face [$m^2$] 
-- $\dot{x}$ is the velocity of the actuator [$m/s$]
+- $A$ is the area of the actuator face [ $m^2$ ] 
+- $\dot{x}$ is the velocity of the actuator [ $m/s$ ]
 
 
 ## Actuator
-The actuator can be derived from Newton's 2nd law 
 
 ![](img/actuator.png)
 
+The actuator can be derived from Newton's 2nd law 
 
-$$m \ddot{x} = F_2 - F_1 - F_d$$
+$$m \ddot{x} = F_1 - F_2 - F_d$$
 
 Where
-- $m$ is the mass of the actuator [$kg$] 
-- $x$ is the actuator position [$m$]
-- $\dot{x}$ is the actuator velocity [$m/s$]
-- $\ddot{x}$ is the actuator acceleration [$m/s^2$] 
-- $F_1$ is the pressure pushing down on the actuator ($p_1 A$) [$N$]
-- $F_2$ is the pressure pushing up on the actuator ($p_2 A$) [$N$]
-- $F_d$ is the damping resistance ($c \dot{x}$) [$N$]
-- $p$ is pressure [$Pa$] 
-- $A$ is the area of the actuator face [$A$]
-- $c$ is the damping coefficient [$N/(m/s)$] 
+- $m$ is the mass of the actuator [ $kg$ ] 
+- $x$ is the actuator position [ $m$ ]
+- $\dot{x}$ is the actuator velocity [ $m/s$ ]
+- $\ddot{x}$ is the actuator acceleration [ $m/s^2$ ] 
+- $F_1$ is the pressure pushing down on the actuator ( $p_1 A$ ) [ $N$ ]
+- $F_2$ is the pressure pushing up on the actuator ( $p_2 A$ ) [ $N$ ]
+- $F_d$ is the damping resistance ($c \dot{x}$) [ $N$ ]
+- $p$ is pressure [ $Pa$ ] 
+- $A$ is the area of the actuator face [ $A$ ]
+- $c$ is the damping coefficient [ $N/(m/s)$ ] 
 
 
 ## Incompressible Flow System
@@ -69,7 +69,7 @@ $$p_s - p_1 = \frac{1}{2} \rho u^2 C_d$$
 
 $$p_2 - p_r = \frac{1}{2} \rho u^2 C_d$$
 
-$$m \ddot{x} = (p_2 - p_1) A - c \dot{x}$$
+$$m \ddot{x} = (p_1 - p_2) A - c \dot{x}$$
 
 
 # Steady State Solution
@@ -81,7 +81,7 @@ $$p_s - {\color{red}p_1} = \frac{1}{2} \rho {\color{red}u}^2 C_d$$
 
 $${\color{red}p_2} - p_r = \frac{1}{2} \rho {\color{red}u}^2 C_d$$
 
-$$0 = ({\color{red}p_2} - {\color{red}p_1}) A - c \dot{x}$$
+$$0 = ({\color{red}p_1} - {\color{red}p_2}) A - c \dot{x}$$
 
 Note: for steady state $\ddot{x} = 0$
 
@@ -95,7 +95,7 @@ $$p_s - {\color{red}p_1} = \frac{1}{2} \rho {\color{red}u}^2 C_d$$
 
 $${\color{red}p_2} - p_r = \frac{1}{2} \rho {\color{red}u}^2 C_d$$
 
-$$m {\color{red}\ddot{x}} = ({\color{red}p_2} - {\color{red}p_1}) A - c {\color{red}\dot{x}}$$
+$$m {\color{red}\ddot{x}} = ({\color{red}p_1} - {\color{red}p_2}) A - c {\color{red}\dot{x}}$$
 
 
 # Compressible Flow System - Using Component Based Modeling
